@@ -1,0 +1,13 @@
+/* TEAM */
+Business: Kwiktow NQ — Townsville Towing &amp; Recovery
+Phone:    0409 739 332
+Email:    accounts@kwiktow.com.au
+Location: Townsville, QLD, Australia
+
+/* SERVICE */
+Hours:    24 hours, 7 days
+Coverage: Every Townsville suburb + Thuringowa + Magnetic Island
+
+/* SITE */
+Standards: HTML5, CSS3, JSON-LD, Open Graph
+Components: schema.org markup, llms.txt, llms-full.txt, sitemap.xml

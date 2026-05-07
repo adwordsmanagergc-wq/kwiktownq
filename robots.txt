@@ -1,5 +1,10 @@
 User-agent: *
 Allow: /
+Disallow: /thanks.html
 
-# Sitemap
+# Sitemaps
 Sitemap: https://kwiktownq.com.au/sitemap.xml
+
+# AI / LLM context (https://llmstxt.org)
+# /llms.txt
+# /llms-full.txt

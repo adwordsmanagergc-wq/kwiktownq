@@ -200,9 +200,11 @@ def render(group, name, postcode, response, blurb):
         '{'
         '"@context":"https://schema.org",'
         '"@type":"AutomotiveBusiness",'
+        f'"@id":"{url}#business",'
         f'"name":"Kwiktow NQ — Tow Truck {name}",'
         f'"url":"{url}",'
         '"image":"https://kwiktownq.com.au/KwikTow-hero-img.webp",'
+        '"logo":"https://kwiktownq.com.au/kwik-tow-logo.webp",'
         '"telephone":"+61-409-739-332",'
         '"email":"accounts@kwiktow.com.au",'
         '"priceRange":"$$",'
@@ -210,7 +212,20 @@ def render(group, name, postcode, response, blurb):
         '"address":{"@type":"PostalAddress",'
         f'"addressLocality":"{name}","addressRegion":"QLD","postalCode":"{postcode}","addressCountry":"AU"' + '},'
         f'"areaServed":' + '{"@type":"Place",' + f'"name":"{name}, Townsville QLD"' + '},'
-        '"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}'
+        '"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"},'
+        '"parentOrganization":{"@id":"https://kwiktownq.com.au/#organization"}'
+        '}'
+    )
+
+    breadcrumb = (
+        '{'
+        '"@context":"https://schema.org",'
+        '"@type":"BreadcrumbList",'
+        '"itemListElement":['
+            '{"@type":"ListItem","position":1,"name":"Home","item":"https://kwiktownq.com.au/"},'
+            '{"@type":"ListItem","position":2,"name":"Service Areas","item":"https://kwiktownq.com.au/service-areas.html"},'
+            f'{{"@type":"ListItem","position":3,"name":"Tow Truck {name}","item":"{url}"}}'
+        ']'
         '}'
     )
 
@@ -230,10 +245,18 @@ def render(group, name, postcode, response, blurb):
 <meta property="og:url" content="{url}" />
 <meta property="og:image" content="https://kwiktownq.com.au/KwikTow-hero-img.webp" />
 <meta name="theme-color" content="#ffb400" />
+
+<meta name="geo.region" content="AU-QLD" />
+<meta name="geo.placename" content="{name}, Townsville" />
+<meta name="geo.position" content="-19.2589;146.8169" />
+<meta name="ICBM" content="-19.2589, 146.8169" />
+<link rel="alternate" type="text/markdown" title="LLM context" href="/llms.txt" />
+
 <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg" />
 <link rel="stylesheet" href="assets/css/style.css" />
 
 <script type="application/ld+json">{schema}</script>
+<script type="application/ld+json">{breadcrumb}</script>
 </head>
 <body>
 

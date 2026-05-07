@@ -79,6 +79,7 @@ p { margin-bottom: 1rem; color: var(--muted); }
   width: 38px; height: 38px; border-radius: 8px;
   display: grid; place-items: center; font-weight: 900;
 }
+.logo-img { height: 44px; width: auto; display: block; }
 .logo small { display: block; font-size: .65rem; color: var(--muted); font-weight: 600; letter-spacing: .15em; text-transform: uppercase; }
 
 .nav-links { display: flex; gap: 1.5rem; list-style: none; align-items: center; }
@@ -162,7 +163,8 @@ p { margin-bottom: 1rem; color: var(--muted); }
   display: grid; place-items: center; position: relative;
   background: linear-gradient(135deg, var(--gray), var(--light-gray));
 }
-.carousel-slide img { width: 100%; height: 100%; object-fit: cover; }
+.carousel-slide img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.carousel-slide img.contain { object-fit: contain; background: var(--darker); }
 .carousel-slide .placeholder {
   text-align: center; color: var(--muted);
   border: 2px dashed var(--light-gray);

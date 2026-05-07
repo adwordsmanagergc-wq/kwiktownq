@@ -428,3 +428,26 @@ a.chip:hover {
   padding: 1rem 1.25rem; border-radius: 8px; color: var(--text);
   margin: 1rem 0;
 }
+
+/* ---------- Suburb finder dropdown ---------- */
+.suburb-finder {
+  max-width: 520px; margin: 0 auto;
+  background: var(--gray); border: 1px solid var(--light-gray);
+  padding: 1.25rem 1.5rem; border-radius: var(--radius);
+}
+.suburb-finder select {
+  width: 100%; padding: .9rem 1rem;
+  background: var(--dark); border: 1px solid var(--light-gray);
+  color: var(--white); border-radius: var(--radius);
+  font-size: 1rem; font-weight: 600; font-family: inherit;
+  appearance: none; -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ffb400'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right .75rem center;
+  background-size: 1.25rem;
+  padding-right: 2.5rem;
+  cursor: pointer;
+}
+.suburb-finder select:focus { outline: 2px solid var(--primary); outline-offset: 0; border-color: var(--primary); }
+.suburb-finder optgroup { color: var(--primary); font-weight: 800; background: var(--darker); }
+.suburb-finder option { color: var(--white); background: var(--dark); font-weight: 500; }

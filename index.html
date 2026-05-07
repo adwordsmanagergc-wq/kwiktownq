@@ -358,55 +358,72 @@
       <h2>Every Townsville suburb, around the clock</h2>
       <p>Based in Townsville and servicing only Townsville — that's why we're fast. If your suburb isn't listed, just call; chances are we already have a truck a few streets away.</p>
     </div>
-    <div class="chips">
-      <span class="chip">Townsville City</span>
-      <span class="chip">North Ward</span>
-      <span class="chip">South Townsville</span>
-      <span class="chip">West End</span>
-      <span class="chip">Belgian Gardens</span>
-      <span class="chip">Castle Hill</span>
-      <span class="chip">Hyde Park</span>
-      <span class="chip">Pimlico</span>
-      <span class="chip">Hermit Park</span>
-      <span class="chip">Mysterton</span>
-      <span class="chip">Aitkenvale</span>
-      <span class="chip">Currajong</span>
-      <span class="chip">Mundingburra</span>
-      <span class="chip">Cranbrook</span>
-      <span class="chip">Vincent</span>
-      <span class="chip">Heatley</span>
-      <span class="chip">Garbutt</span>
-      <span class="chip">Rosslea</span>
-      <span class="chip">Gulliver</span>
-      <span class="chip">Oonoonba</span>
-      <span class="chip">Idalia</span>
-      <span class="chip">Stuart</span>
-      <span class="chip">Wulguru</span>
-      <span class="chip">Cluden</span>
-      <span class="chip">Annandale</span>
-      <span class="chip">Douglas</span>
-      <span class="chip">Murray</span>
-      <span class="chip">Mount Stuart</span>
-      <span class="chip">Mount Louisa</span>
-      <span class="chip">Kirwan</span>
-      <span class="chip">Thuringowa Central</span>
-      <span class="chip">Condon</span>
-      <span class="chip">Rasmussen</span>
-      <span class="chip">Kelso</span>
-      <span class="chip">Pinnacles</span>
-      <span class="chip">Bohle Plains</span>
-      <span class="chip">Shaw</span>
-      <span class="chip">Alice River</span>
-      <span class="chip">Burdell</span>
-      <span class="chip">Mount Low</span>
-      <span class="chip">Bushland Beach</span>
-      <span class="chip">Deeragun</span>
-      <span class="chip">Saunders Beach</span>
-      <span class="chip">Yabulu</span>
-      <span class="chip">Black River</span>
-      <span class="chip">Bluewater</span>
-      <span class="chip">Magnetic Island</span>
-    </div>
+    <form class="suburb-finder" onsubmit="return false" aria-label="Find your suburb">
+      <label for="suburb-select" style="display:block;color:var(--white);font-weight:700;margin-bottom:.5rem;text-align:center">Find your suburb</label>
+      <select id="suburb-select" onchange="if(this.value) location.href=this.value">
+        <option value="">— Select your Townsville suburb —</option>
+        <optgroup label="CBD &amp; Inner Townsville (~15–20 min)">
+          <option value="tow-truck-townsville-city.html">Townsville City</option>
+          <option value="tow-truck-north-ward.html">North Ward</option>
+          <option value="tow-truck-south-townsville.html">South Townsville</option>
+          <option value="tow-truck-west-end.html">West End</option>
+          <option value="tow-truck-belgian-gardens.html">Belgian Gardens</option>
+          <option value="tow-truck-castle-hill.html">Castle Hill</option>
+          <option value="tow-truck-hyde-park.html">Hyde Park</option>
+          <option value="tow-truck-pimlico.html">Pimlico</option>
+          <option value="tow-truck-hermit-park.html">Hermit Park</option>
+          <option value="tow-truck-mysterton.html">Mysterton</option>
+        </optgroup>
+        <optgroup label="Western Suburbs (~22–25 min)">
+          <option value="tow-truck-aitkenvale.html">Aitkenvale</option>
+          <option value="tow-truck-currajong.html">Currajong</option>
+          <option value="tow-truck-mundingburra.html">Mundingburra</option>
+          <option value="tow-truck-cranbrook.html">Cranbrook</option>
+          <option value="tow-truck-vincent.html">Vincent</option>
+          <option value="tow-truck-heatley.html">Heatley</option>
+          <option value="tow-truck-garbutt.html">Garbutt</option>
+          <option value="tow-truck-rosslea.html">Rosslea</option>
+          <option value="tow-truck-gulliver.html">Gulliver</option>
+          <option value="tow-truck-oonoonba.html">Oonoonba</option>
+        </optgroup>
+        <optgroup label="Riverside &amp; Idalia (~22–28 min)">
+          <option value="tow-truck-idalia.html">Idalia</option>
+          <option value="tow-truck-stuart.html">Stuart</option>
+          <option value="tow-truck-wulguru.html">Wulguru</option>
+          <option value="tow-truck-cluden.html">Cluden</option>
+          <option value="tow-truck-annandale.html">Annandale</option>
+          <option value="tow-truck-douglas.html">Douglas</option>
+          <option value="tow-truck-murray.html">Murray</option>
+          <option value="tow-truck-mount-stuart.html">Mount Stuart</option>
+        </optgroup>
+        <optgroup label="Thuringowa (~28–32 min)">
+          <option value="tow-truck-mount-louisa.html">Mount Louisa</option>
+          <option value="tow-truck-kirwan.html">Kirwan</option>
+          <option value="tow-truck-thuringowa-central.html">Thuringowa Central</option>
+          <option value="tow-truck-condon.html">Condon</option>
+          <option value="tow-truck-rasmussen.html">Rasmussen</option>
+          <option value="tow-truck-kelso.html">Kelso</option>
+          <option value="tow-truck-pinnacles.html">Pinnacles</option>
+          <option value="tow-truck-bohle-plains.html">Bohle Plains</option>
+          <option value="tow-truck-shaw.html">Shaw</option>
+          <option value="tow-truck-alice-river.html">Alice River</option>
+        </optgroup>
+        <optgroup label="Northern Beaches (~30–40 min)">
+          <option value="tow-truck-burdell.html">Burdell</option>
+          <option value="tow-truck-mount-low.html">Mount Low</option>
+          <option value="tow-truck-bushland-beach.html">Bushland Beach</option>
+          <option value="tow-truck-deeragun.html">Deeragun</option>
+          <option value="tow-truck-saunders-beach.html">Saunders Beach</option>
+          <option value="tow-truck-yabulu.html">Yabulu</option>
+          <option value="tow-truck-black-river.html">Black River</option>
+          <option value="tow-truck-bluewater.html">Bluewater</option>
+        </optgroup>
+        <optgroup label="Magnetic Island">
+          <option value="tow-truck-magnetic-island.html">Magnetic Island</option>
+        </optgroup>
+      </select>
+      <p style="text-align:center;color:var(--muted);margin-top:.75rem;font-size:.85rem">Pick your suburb to see local response times, services and direct call links.</p>
+    </form>
     <div style="text-align:center;margin-top:2rem">
       <a href="service-areas.html" class="btn btn-ghost">See full service area →</a>
     </div>

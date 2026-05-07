@@ -4,6 +4,8 @@
   <url><loc>https://kwiktownq.com.au/services.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://kwiktownq.com.au/service-areas.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://kwiktownq.com.au/about.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://kwiktownq.com.au/blog.html</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://kwiktownq.com.au/blog-tow-truck-townsville.html</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
   <url><loc>https://kwiktownq.com.au/faq.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://kwiktownq.com.au/contact.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 </urlset>

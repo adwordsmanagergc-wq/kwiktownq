@@ -3,7 +3,38 @@ document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.menu-toggle');
   const links = document.querySelector('.nav-links');
   if (toggle && links) {
-    toggle.addEventListener('click', () => links.classList.toggle('open'));
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.setAttribute('aria-controls', 'nav-links');
+    if (!links.id) links.id = 'nav-links';
+
+    const setOpen = (open) => {
+      links.classList.toggle('open', open);
+      document.body.classList.toggle('menu-open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.textContent = open ? '✕' : '☰';
+    };
+
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      setOpen(!links.classList.contains('open'));
+    });
+
+    links.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => setOpen(false));
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!links.classList.contains('open')) return;
+      if (!links.contains(e.target) && e.target !== toggle) setOpen(false);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && links.classList.contains('open')) setOpen(false);
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 880 && links.classList.contains('open')) setOpen(false);
+    });
   }
 
   // Carousel
@@ -23,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const msg = document.createElement('div');
       msg.className = 'alert';
-      msg.textContent = 'Thanks! Your message has been received. For urgent towing call 0400 000 000.';
+      msg.textContent = 'Thanks! Your message has been received. For urgent towing call 0409 739 332.';
       f.replaceWith(msg);
     });
   });

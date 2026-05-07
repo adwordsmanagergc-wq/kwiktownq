@@ -48,16 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (path === '' && href === 'index.html') a.classList.add('active');
   });
 
-  // Form fake handler
-  document.querySelectorAll('form[data-handler="contact"]').forEach(f => {
-    f.addEventListener('submit', e => {
-      e.preventDefault();
-      const msg = document.createElement('div');
-      msg.className = 'alert';
-      msg.textContent = 'Thanks! Your message has been received. For urgent towing call 0409 739 332.';
-      f.replaceWith(msg);
-    });
-  });
+  // Form is real — posts to FormSubmit and redirects to thanks.html.
+  // No intercept needed.
 });
 
 function initCarousel(root) {

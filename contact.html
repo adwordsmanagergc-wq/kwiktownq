@@ -21,6 +21,7 @@
     "@type":"AutomotiveBusiness",
     "name":"Kwiktow NQ",
     "telephone":"+61-409-739-332",
+    "email":"accounts@kwiktow.com.au",
     "address":{"@type":"PostalAddress","addressLocality":"Townsville","addressRegion":"QLD","postalCode":"4810","addressCountry":"AU"}
   }
 }
@@ -59,6 +60,7 @@
     <p style="max-width:720px;margin:1rem auto 0">For emergency towing, the fastest way is always a phone call. For quotes &amp; non-urgent enquiries, drop us a message below.</p>
     <div style="margin-top:1.5rem;display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap">
       <a href="tel:+61409739332" class="btn btn-primary">📞 Call 0409 739 332</a>
+      <a href="mailto:accounts@kwiktow.com.au" class="btn btn-ghost">✉ Email accounts@kwiktow.com.au</a>
     </div>
   </div>
 </section>
@@ -78,6 +80,12 @@
         </div>
 
         <div class="card" style="margin-top:1rem">
+          <h3>✉ Email</h3>
+          <p style="font-size:1.05rem"><a href="mailto:accounts@kwiktow.com.au">accounts@kwiktow.com.au</a></p>
+          <p style="font-size:.85rem">For quotes, insurance referrals, account billing &amp; non-urgent enquiries. The website quote form sends here too.</p>
+        </div>
+
+        <div class="card" style="margin-top:1rem">
           <h3>📍 Location</h3>
           <p>Townsville, QLD 4810<br>(Service compound &amp; storage on-site)</p>
         </div>
@@ -92,8 +100,13 @@
       <!-- Form -->
       <div id="quote">
         <h2>Request a quote</h2>
-        <p>Tell us about the job and we'll get back to you ASAP. For urgent towing, please call instead.</p>
-        <form data-handler="contact" novalidate>
+        <p>Tell us about the job and we'll get back to you ASAP. For urgent towing, please call instead. All enquiries go straight to <a href="mailto:accounts@kwiktow.com.au">accounts@kwiktow.com.au</a>.</p>
+        <form action="https://formsubmit.co/accounts@kwiktow.com.au" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="New website enquiry — Kwiktow NQ">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://kwiktownq.com.au/thanks.html">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
           <div class="form-grid">
             <div>
               <label for="name">Your name *</label>
@@ -116,7 +129,8 @@
                 <option>Heavy vehicle towing</option>
                 <option>4WD / off-road recovery</option>
                 <option>Machinery transport</option>
-                <option>Long distance towing</option>
+                <option>Boat &amp; trailer transport</option>
+                <option>Prestige / specialised vehicle</option>
                 <option>Roadside assistance</option>
                 <option>Other / not sure</option>
               </select>
@@ -139,7 +153,7 @@
             </div>
             <div class="full">
               <button class="btn btn-primary" type="submit">Send enquiry</button>
-              <p style="font-size:.8rem;margin-top:.75rem">By submitting you agree to be contacted by Kwiktow NQ regarding your enquiry.</p>
+              <p style="font-size:.8rem;margin-top:.75rem">By submitting you agree to be contacted by Kwiktow NQ regarding your enquiry. Sent securely to accounts@kwiktow.com.au.</p>
             </div>
           </div>
         </form>

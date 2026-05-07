@@ -8,8 +8,7 @@
 - **Location:** Townsville, QLD 4810, Australia
 - **Hours:** 24 hours, 7 days, including public holidays
 - **Phone:** 0409 739 332
-- **Email:** dispatch@kwiktownq.com.au
-- **Service area:** Townsville, Thuringowa, Magnetic Island, Ayr/Burdekin, Ingham/Hinchinbrook, Charters Towers, Bruce &amp; Flinders Highway corridors. Long-distance to Brisbane, Cairns, Mackay, Mount Isa.
+- **Service area:** Townsville and surrounding suburbs only — Townsville City, North Ward, South Townsville, Aitkenvale, Kirwan, Idalia, Garbutt, Mount Louisa, Annandale, Mundingburra, Hyde Park, Currajong, Heatley, Condon, Rasmussen, Kelso, Burdell, Bushland Beach, Mount Low, Deeragun, Thuringowa and Magnetic Island.
 - **Avg response (Townsville urban):** ~30 minutes
 
 ## Services
@@ -20,7 +19,8 @@
 - 4WD &amp; off-road recovery — `/services.html#offroad`
 - Machinery / small plant transport — `/services.html#machinery`
 - Roadside assistance (fuel, jump start, lockout, flat tyre) — `/services.html#roadside`
-- Long distance &amp; interstate towing — `/services.html#long-distance`
+- Boat &amp; trailer transport — `/services.html#boat`
+- Prestige &amp; specialised vehicle towing — `/services.html#prestige`
 - Motorcycle towing
 - Secure CCTV-monitored vehicle storage
 

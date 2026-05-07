@@ -415,6 +415,12 @@ ul.checks li::before {
   background: var(--gray); border: 1px solid var(--light-gray);
   color: var(--text); padding: .5rem 1rem; border-radius: 999px;
   font-size: .9rem; font-weight: 600;
+  text-decoration: none; transition: background .15s, border-color .15s, color .15s;
+}
+a.chip { color: var(--text); }
+a.chip:hover {
+  background: var(--primary); border-color: var(--primary);
+  color: var(--dark);
 }
 
 .alert {

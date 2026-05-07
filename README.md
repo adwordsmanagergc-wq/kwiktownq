@@ -22,10 +22,10 @@ Static, SEO-optimised marketing site for **Kwiktow NQ**, a 24/7 towing &amp; rec
 ## Replacing placeholders before launch
 
 ### 1. Phone number
-Replace `0400 000 000` and `+61400000000` everywhere:
+Replace `0409 739 332` and `+61409739332` everywhere:
 
 ```bash
-grep -rl '0400 000 000\|+61400000000' . --include='*.html'
+grep -rl '0409 739 332\|+61409739332' . --include='*.html'
 ```
 
 ### 2. Images
